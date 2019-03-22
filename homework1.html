@@ -8,6 +8,25 @@
 			b = parseFloat(document.getElementById("two").value);
 			document.getElementById("ans").innerHTML = a + b;
 		}
+		function minus(){
+			var a,b;
+			a = parseFloat(document.getElementById("one").value);
+			b = parseFloat(document.getElementById("two").value);
+			document.getElementById("ans").innerHTML = a - b;
+		}
+		function mu(){
+			var a,b;
+			a = parseFloat(document.getElementById("one").value);
+			b = parseFloat(document.getElementById("two").value);
+			document.getElementById("ans").innerHTML = a*b;
+		}
+		function di(){
+			var a,b;
+			a = parseFloat(document.getElementById("one").value);
+			b = parseFloat(document.getElementById("two").value);
+			document.getElementById("ans").innerHTML = a/b;
+		}
+
 	</script>
 	
 </head>
@@ -15,6 +34,9 @@
 	<input type="number" id="one" value="1">
 	<input type="number" id="two" value="2">
 	<button id="add" onclick="add()">add</button>
+	<input type="button" value="minus" onclick="minus()">
+	<input type="button" value="multiple" onclick="mu()">
+	<input type="button" value="division" onclick="di()">
 	<h2> result: </h2>
 	<output id = "ans"></output>
 	

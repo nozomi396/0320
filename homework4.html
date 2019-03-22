@@ -1,1 +1,29 @@
 <!DOCTYPE html>
+<html>
+ <head>
+ <title>Canvas</title>
+ <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+ </head>
+ <body>
+
+<canvas id="myCanvas" width="800" height="500" style="border:1px solid #d3d3d3">
+</canvas>
+<br>
+<button onclick="clearInterval(int)">Stop</button>
+
+<script> 
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="red";
+var i = 0;
+ctx.fillRect(i,0,50,50);
+var int=self.setInterval("clock()",1000);
+
+function clock()
+  {
+  	ctx.fillRect(i,0,50,50);
+
+  	i = i + 10;
+  }
+
+</script>
